@@ -12,15 +12,27 @@ module.exports = {
         logo: '/logo.png',
         nav: [
 			{text: '首页', link: '/'},
-			{text: '导航', items: [
-				{text: 'spring-boot', link: '/SpringBoot/'},
-				{text: 'spring-cloud', link: '/SpringCloud/'},
+			{text: 'Java', items: [
+				{text: 'javaApi', link: '/JavaApi/'}
+			]},
+			{text: 'Spring系列', items: [
 				{text: 'spring', link: '/Spring/'},
 				{text: 'spring-mvc', link: '/SpringMVC/'},
-				{text: 'web', link: '/web/'},
-				{text: 'maven', link: '/maven/'},
-				{text: 'github', link: '/github/'},
+				{text: 'spring-boot', link: '/SpringBoot/'},
+				{text: 'spring-cloud', link: '/SpringCloud/'}
+			]},
+			{text: 'Database', items: [
+				{text: 'Oracle', link: '/sql/'}
+			]},
+			{text: 'Vue', items: [
 				{text: 'vue', link: '/vue/'}
+			]},
+			{text: '工具集', items: [
+					{text: 'web', link: '/web/'},
+					{text: 'maven', link: '/maven/'},
+					{text: 'github', link: '/github/'},
+					{text: 'browser', link: '/browser/'},
+					{text: 'idea', link: '/idea/'}
 			]},
 			{text: 'github', link: 'https://github.com/shihe110',target:'_blank'}
 			

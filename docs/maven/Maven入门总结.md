@@ -1,4 +1,7 @@
+## Maven入门总结
+
 ## 1.maven介绍
+
 1.1 maven旨在解决什么问题？
 java生态中各种jar包之间存在关联，在使用前要确认jar包的其他依赖包，所以依赖管理会很麻烦，这是maven要解决的一个问题。
 
@@ -15,6 +18,7 @@ Maven 中的有两大核心：
 - 项目构建：对项目进行编译、测试、打包、部署、上传到私服等
 
 ## 2.maven安装
+
 前提：安装jdk
 
 1.下载maven  地址：http://maven.apache.org/download.cgi

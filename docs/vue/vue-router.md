@@ -1,4 +1,4 @@
-## 1.快速入门
+## vue-router快速入门
 
 [vue-router手册地址](https://router.vuejs.org/zh/)
 

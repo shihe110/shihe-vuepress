@@ -1,4 +1,4 @@
-## 前提是要安装npm
+## vue-cli快速上手
 
 ## 安装npm-下载安装
 [node下载]( http://nodejs.cn/download/)
