@@ -1,5 +1,5 @@
 module.exports = {
-    title: '合抱之木生于毫末',
+    title: '毫末之木',
 	base: '/onedocs/',
 	description: '合抱之木生于毫末，九层之台起于累土，千里之行始于足下',
     head: [
