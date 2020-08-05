@@ -18,6 +18,7 @@ mvn install:install-file -DgroupId=com.oracle "-DartifactId=ojdbc14" "-Dversion=
 - 4.使用aop和模板减少模式化代码
 
 ## IOC
+
 Spring IOC容器（applicationContext）负责创建bean，并通过容器将功能类bean注入到你需要的bean中。
 spring提供使用xml、注解、java配置、groovy配置实现bean的创建和注入。
 

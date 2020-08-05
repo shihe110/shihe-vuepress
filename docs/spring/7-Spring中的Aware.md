@@ -1,6 +1,7 @@
 ## Spring中的Aware
 
 #### Spring中的Aware相关的接口功能描述。
+
 - 1.  Spring中提供了一些以Aware结尾的接口，实现了Aware接口的bean在被初始化之后，可以获取相应的资源。
 - 2、 通过Aware接口，可以对Spring相应的资源进行操作(一定要慎重)；
 - 3、 为了对Spring进行简单的扩展提供了方便的入口。

@@ -1,4 +1,4 @@
-## Spring事件 Application Event 
+## Spring事件ApplicationEvent 
 
 spring 事件为bean与bean之间消息通信提供了支持。
 当一个bean处理完一个任务后，希望另一个bean知道并能做相应的处理。

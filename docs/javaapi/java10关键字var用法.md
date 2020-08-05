@@ -1,4 +1,4 @@
-## java 10 新增关键字var的用法
+## java10新增关键字var的用法
 
 ## what
 

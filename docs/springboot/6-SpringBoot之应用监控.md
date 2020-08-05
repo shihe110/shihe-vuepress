@@ -1,3 +1,21 @@
+## SpringBoot监控和管理端点
+
+| 端点名|	描述|
+| ---- | ---- |
+|actuator|所有EndPoint的列表，需加入spring HATEOAS支持|
+|autoconfig|	当前应用的所有自动配置信息|
+|auditevents|	审计事件|
+|beans	|所有Bean的信息|
+|configprops	|所有配置属性|
+|dump	|线程状态信息|
+|env	|当前环境信息|
+|health	|应用健康状况|
+|info	|当前应用信息|
+|metrics	|应用的各项指标|
+|mappings	|应用@RequestMapping映射路径|
+|shutdown	|关闭当前应用（默认关闭）|
+|trace	|追踪信息（最新的http请求）|
+
 ## Actuator
 
 在生产环境中，需要对应用程序的状态进行监控。前面我们已经介绍了使用JMX对Java应用程序包括JVM进行监控，使用JMX需要把一些监控信息以MBean的形式暴露给JMX Server，而Spring Boot已经内置了一个监控功能，它叫Actuator。

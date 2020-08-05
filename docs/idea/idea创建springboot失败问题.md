@@ -1,4 +1,5 @@
 ## idea创建springboot项目失败问题
+
 idea创建springboot项目，也是从springboot初始化网站(https://start.spring.io/)
 开始的，由于国外网站的问题，经常创建失败，或直接打不开网站。
 由此产生的问题可以通过几种方式解决
