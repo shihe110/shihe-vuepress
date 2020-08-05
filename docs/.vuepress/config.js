@@ -16,10 +16,10 @@ module.exports = {
 				{text: 'javaapi', link: '/javaapi/'}
 			]},
 			{text: 'Spring系列', items: [
-				{text: 'spring', link: '/Spring/'},
-				{text: 'spring-mvc', link: '/SpringMVC/'},
-				{text: 'spring-boot', link: '/SpringBoot/'},
-				{text: 'spring-cloud', link: '/SpringCloud/'}
+				{text: 'spring', link: '/spring/'},
+				{text: 'spring-mvc', link: '/springmvc/'},
+				{text: 'spring-boot', link: '/springboot/'},
+				{text: 'spring-cloud', link: '/springcloud/'}
 			]},
 			{text: 'Database', items: [
 				{text: 'Oracle', link: '/sql/'}
