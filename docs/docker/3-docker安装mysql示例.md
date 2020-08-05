@@ -1,6 +1,5 @@
-## docker安装mysql并使用Navicat连接示例
+## docker安装mysql并连接
 
----
 
 ## 示例1
 
