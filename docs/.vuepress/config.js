@@ -13,7 +13,7 @@ module.exports = {
         nav: [
 			{text: '首页', link: '/'},
 			{text: 'Java', items: [
-				{text: 'javaApi', link: '/JavaApi/'}
+				{text: 'javaapi', link: '/javaapi/'}
 			]},
 			{text: 'Spring系列', items: [
 				{text: 'spring', link: '/Spring/'},
@@ -32,6 +32,7 @@ module.exports = {
 					{text: 'maven', link: '/maven/'},
 					{text: 'github', link: '/github/'},
 					{text: 'browser', link: '/browser/'},
+					{text: 'docker', link: '/docker/'},
 					{text: 'idea', link: '/idea/'}
 			]},
 			{text: 'github', link: 'https://github.com/shihe110',target:'_blank'}
