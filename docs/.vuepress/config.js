@@ -22,7 +22,7 @@ module.exports = {
 				{text: 'spring-cloud', link: '/springcloud/'}
 			]},
 			{text: 'Database', items: [
-				{text: 'Oracle', link: '/sql/'}
+				{text: 'db', link: '/db/'}
 			]},
 			{text: 'Vue', items: [
 				{text: 'vue', link: '/vue/'}
