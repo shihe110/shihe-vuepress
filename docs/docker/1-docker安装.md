@@ -1,21 +1,23 @@
-## 1.docker下载
+## windows下安装docker
+
+### 1.docker下载
 [官网下载地址](https://docs.docker.com/docker-for-windows/install/#download-docker-for-windows)
 
 可使用迅雷加快下载速度
 
-## 2.启动Hyper-V
+### 2.启动Hyper-V
 "控制面板"->"程序"->"启动或关闭Windows功能"-重启
 
 重启后检查启动情况-win图标-windows管理工具
 
-## 3.安装
+### 3.安装
 可能会出现内存不足问题-可以在任务栏找到-docker图标-右键settings--advanced调整内存值
 
-## 4.验证
+### 4.验证
 win+R  cmd  
 命令：docker --version
 
-## 5.win10家庭版没有Hyper-V解决办法
+### 5.win10家庭版没有Hyper-V解决办法
 
 将以下的命令保存在一个txt文件中，然后重命名为.cmd文件，最后以管理员身份运行该文件。
 
@@ -27,7 +29,7 @@ pushd "%~dp0"dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum >hyper-v.txtfo
 
 按照第2步进行启动Hyper-V
 
-## 6.解决家庭版win10问题
+### 6.解决家庭版win10问题
 
 家庭版伪装成专业版
 
@@ -43,4 +45,18 @@ HKEY_LOCAL_MACHINE\software\Microsoft\WindowsNT\CurrentVersion
 
 注意，这个修改会在电脑重启之后恢复原状。只要后续安装成功的话就没有影响了。
 
+## Linux系统docker安装
+
+### centos安装命令
+
+```java
+sudo yum update 
+sudo yum install docker 
+```
+### ubuntu安装命令
+
+```java
+sudo apt-get update
+sudo apt-get docker.io
+```
 
