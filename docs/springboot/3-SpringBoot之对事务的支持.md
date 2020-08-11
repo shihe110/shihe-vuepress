@@ -1,3 +1,5 @@
+## SpringBoot事务
+
 ## 声明式事务
 
 配置类声明开启事务管理器
@@ -20,6 +22,7 @@ public void saveUser(Long id,String name){
 @Transactional还可以注解在类上，声明类中的所有public方法都开启事务
 
 ## springboot对事务的支持
+
 - 1.自动配置事务管理器-源码
 在使用jdbc访问数据库时，springboot定义了PlatformTransactionManager的实现DataSourceTransactionManager的bean。
 

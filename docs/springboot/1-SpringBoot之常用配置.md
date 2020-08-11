@@ -1,3 +1,5 @@
+## SpringBoot常用配置
+
 ## SpringBoot之关闭特定自动配置
 
 关闭特定的自动配置应该使用@SpringBootApplication注解的exclude参数

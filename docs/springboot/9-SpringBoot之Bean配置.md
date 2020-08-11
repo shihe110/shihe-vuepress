@@ -1,4 +1,4 @@
-## Spring Bean配置
+## SpringBoot Bean配置
 
 ### 注解配置
 ```js
