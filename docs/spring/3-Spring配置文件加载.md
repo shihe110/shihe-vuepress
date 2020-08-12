@@ -4,10 +4,10 @@
 
 ```
 <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
-            <version>5.2.6.RELEASE</version>
-        </dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-beans</artifactId>
+    <version>5.2.6.RELEASE</version>
+</dependency>
 ```
 
 ## 新建实体
