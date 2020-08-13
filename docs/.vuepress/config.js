@@ -27,6 +27,9 @@ module.exports = {
 			{text: 'Vue', items: [
 				{text: 'vue', link: '/vue/'}
 			]},
+			{text: '互联网', items: [
+				{text: '互联网', link: '/internet/'}
+			]},
 			{text: '工具集', items: [
 					{text: 'web', link: '/web/'},
 					{text: 'maven', link: '/maven/'},
