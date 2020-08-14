@@ -1,2 +1,21 @@
-## SpringMvc的工作原理
+## SpringMvc的配置原理
 
+spring web MVC是基于Servlet构建的，其实现为DispatherServlet,他使用了一个Spring容器（webApplicationContext）从而让servlet和spring容器结合在一起。
+
+### SpringMVC的工作原理
+从DispatherServlet出发，在springboot中通过DispatherServletAutoConfiguration来定义DispatherServlet的bean。
+并通过DispatherServletRegistrationBean的bean来注册DispatherServlet到servlet容器中。
+
+DispatherServlet在处理时将主要的功能代理给两个bean：
+- HandlerMapping处理器映射器
+- HandlerAdapter处理器适配器
+
+### 配置MVC
+
+SpringMVC通过@EnableWebMvc注解，通过导入DelegatingWebMvcConfiguration中的配置（将处理器映射器和处理器适配器负责的内容），做了默认配置。
+
+SpringBoot没有使用该注解，但通过封装继承DelegatingWebMvcConfiguration类WebMvcAutoConfiguration.EnableWebMvcConfiguration做了等价该注解的配置。除了这些配置springboot配置类WebMvcAutoConfiguration做了更多的配置。
+
+我们通过实现WebMvcConfigurer接口，自定义配置类来定制配置MVC。同时启用springboot提供的默认自动配置。如果不想用默认配置，则只需在配置类上添加@EnableWebMvc注解即可使得默认配置失效。
+
+因子spring5.0开始，全面支持java8，WebMvcConfigurerAdapter将被废弃。
