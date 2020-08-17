@@ -33,3 +33,40 @@ SpringBoot的提供的关于springsecurity的自动配置类：SecurityAutoConfi
 ## 定制web安全配置
 
 我们只需定义一个配置类继承WebSecurityConfigurerAdapter类或者实现WebSecurityConfigurer接口
+
+## springsecurity的核心功能
+
+对于一个权限管理框架而言，无论是 Shiro 还是 Spring Security，最最核心的功能，无非就是两方面：
+
+认证
+授权
+通俗点说，认证就是我们常说的登录，授权就是权限鉴别，看看请求是否具备相应的权限。
+
+虽然就是一个简简单单的登录，可是也能玩出很多花样来。
+
+Spring Security 支持多种不同的认证方式，这些认证方式有的是 Spring Security 自己提供的认证功能，有的是第三方标准组织制订的，主要有如下一些：
+
+一些比较常见的认证方式：
+
+```js
+HTTP BASIC authentication headers：基于IETF RFC 标准。
+HTTP Digest authentication headers：基于IETF RFC 标准。
+HTTP X.509 client certificate exchange：基于IETF RFC 标准。
+LDAP：跨平台身份验证。
+Form-based authentication：基于表单的身份验证。
+Run-as authentication：用户用户临时以某一个身份登录。
+OpenID authentication：去中心化认证。
+```
+除了这些常见的认证方式之外，一些比较冷门的认证方式，Spring Security 也提供了支持。
+
+```js
+Jasig Central Authentication Service：单点登录。
+Automatic "remember-me" authentication：记住我登录（允许一些非敏感操作）。
+Anonymous authentication：匿名登录。
+......
+```
+作为一个开放的平台，Spring Security 提供的认证机制不仅仅是上面这些。如果上面这些认证机制依然无法满足你的需求，我们也可以自己定制认证逻辑。当我们需要和一些“老破旧”的系统进行集成时，自定义认证逻辑就显得非常重要了。
+
+除了认证，剩下的就是授权了。
+
+Spring Security 支持基于 URL 的请求授权、支持方法访问授权以及对象访问授权。
