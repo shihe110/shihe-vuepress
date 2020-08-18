@@ -19,7 +19,8 @@ module.exports = {
 				{text: 'spring', link: '/spring/'},
 				{text: 'spring-mvc', link: '/springmvc/'},
 				{text: 'spring-boot', link: '/springboot/'},
-				{text: 'spring-cloud', link: '/springcloud/'}
+				{text: 'spring-cloud', link: '/springcloud/'},
+				{text: 'spring-security', link: '/springsecurity/'}
 			]},
 			{text: 'Database', items: [
 				{text: 'db', link: '/db/'}
