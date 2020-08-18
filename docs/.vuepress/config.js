@@ -22,6 +22,9 @@ module.exports = {
 				{text: 'spring-cloud', link: '/springcloud/'},
 				{text: 'spring-security', link: '/springsecurity/'}
 			]},
+			{text: 'NoSql', items: [
+					{text: 'redis', link: '/redis/'}
+				]},
 			{text: 'Database', items: [
 				{text: 'db', link: '/db/'}
 			]},

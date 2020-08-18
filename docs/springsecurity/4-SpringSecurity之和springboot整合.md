@@ -37,7 +37,7 @@ Using generated security password: 58d4bd1f-1aaa-4de3-bd38-f5722c41dd4e
 >http://localhost:8080/hello 
 
 时请求会被SpringSecurity拦截，重定向到
->http://localhost:9000/login
+>http://localhost:8080/login
 
 被要求使用用户名密码登陆。
 
