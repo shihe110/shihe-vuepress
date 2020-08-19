@@ -12,8 +12,9 @@ module.exports = {
         logo: '/logo.png',
         nav: [
 			{text: '首页', link: '/'},
-			{text: 'Java', items: [
-				{text: 'javaapi', link: '/javaapi/'}
+			{text: 'JavaWeb', items: [
+				{text: 'javaapi', link: '/javaapi/'},
+				{text: 'mybatis', link: '/mybatis/'}
 			]},
 			{text: 'Spring系列', items: [
 				{text: 'spring', link: '/spring/'},
@@ -24,6 +25,9 @@ module.exports = {
 			]},
 			{text: 'NoSql', items: [
 					{text: 'redis', link: '/redis/'}
+				]},
+			{text: 'MQ', items: [
+					{text: '消息中间件', link: '/mq/'}
 				]},
 			{text: 'Database', items: [
 				{text: 'db', link: '/db/'}

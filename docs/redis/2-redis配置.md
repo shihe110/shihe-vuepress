@@ -24,3 +24,11 @@ redis.conf文件
 
 ### 配置参数
 [地址](https://www.runoob.com/redis/redis-conf.html)
+
+
+
+Redis 官网：https://redis.io/
+
+Redis 在线测试：http://try.redis.io/
+
+Redis 命令参考：http://doc.redisfans.com/
