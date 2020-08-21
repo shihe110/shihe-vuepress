@@ -32,8 +32,9 @@ module.exports = {
 			{text: 'Database', items: [
 				{text: 'db', link: '/db/'}
 			]},
-			{text: 'Vue', items: [
-				{text: 'vue', link: '/vue/'}
+			{text: '前端', items: [
+				{text: 'vue', link: '/vue/'},
+				{text: 'js', link: '/js/'}
 			]},
 			{text: '互联网', items: [
 				{text: '互联网', link: '/internet/'}
