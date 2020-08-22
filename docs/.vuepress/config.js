@@ -37,7 +37,8 @@ module.exports = {
 				{text: 'js', link: '/js/'}
 			]},
 			{text: '互联网', items: [
-				{text: '互联网', link: '/internet/'}
+				{text: '互联网', link: '/internet/'},
+				{text: '面试', link: '/interview/'}
 			]},
 			{text: '工具集', items: [
 					{text: 'web', link: '/web/'},
