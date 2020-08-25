@@ -1,0 +1,59 @@
+## mybatis查询
+
+- 一对一
+人和身份证
+```js
+// 身份证
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.IdCardDao">
+    <select id="selectCodeById" parameterType="Integer" resultType= "com.po.Idcard">
+        select * from idcard where id=#{id}
+    </select>
+</mapper>
+
+// 人
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.PersonDao">
+    <!-- 一对一根据id查询个人信息：级联查询的第一种方法（嵌套查询，执行两个SQL语句）-->
+    <resultMap type="com.po.Person" id="cardAndPerson1">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <!-- 一对一级联查询-->
+        <association property="card" column="idcard_id" javaType="com.po.Idcard"
+        select="com.dao.IdCardDao.selectCodeByld"/>
+    </resultMap>
+    <select id="selectPersonById1" parameterType="Integer" resultMap=
+    "cardAndPerson1">
+        select * from person where id=#{id}
+    </select>
+    <!--对一根据id查询个人信息：级联查询的第二种方法（嵌套结果，执行一个SQL语句）-->
+    <resultMap type="com.po.Person" id="cardAndPerson2">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <!-- 一对一级联查询-->
+        <association property="card" javaType="com.po.Idcard">
+            <id property="id" column="idcard_id"/>
+            <result property="code" column="code"/>
+        </association>
+    </resultMap>
+    <select id="selectPersonById2" parameterType="Integer" resultMap= "cardAndPerson2">
+        select p.*,ic.code
+        from person p, idcard ic
+        where p.idcard_id=ic.id and p.id=#{id}
+    </select>
+    <!-- 一对一根据id查询个人信息：连接查询（使用POJO存储结果）-->
+    <select id="selectPersonById3" parameterType="Integer" resultType= "com.pojo.SelectPersonById">
+        select p.*,ic.code
+        from person p, idcard ic
+        where p.idcard_id = ic.id and p.id=#{id}
+    </select>
+</mapper>
+```
