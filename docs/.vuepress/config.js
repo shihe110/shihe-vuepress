@@ -12,9 +12,10 @@ module.exports = {
         logo: '/logo.png',
         nav: [
 			{text: '首页', link: '/'},
-			{text: 'JavaWeb', items: [
+			{text: 'Java', items: [
 				{text: 'javaapi', link: '/javaapi/'},
-				{text: 'mybatis', link: '/mybatis/'}
+				{text: 'mybatis', link: '/mybatis/'},
+				{text: '多线程', link: '/juc/'}
 			]},
 			{text: 'Spring系列', items: [
 				{text: 'spring', link: '/spring/'},
