@@ -30,7 +30,7 @@ module.exports = {
 			]},
 			{text: '前端', items: [
 				{text: 'vue', link: '/vue/'},
-				{text: 'js', link: '/js/'}
+				{text: '前端', link: '/front/'}
 			]},
 			{text: '互联网', items: [
 				{text: '消息中间件', link: '/mq/'},
