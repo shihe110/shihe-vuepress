@@ -13,6 +13,7 @@ module.exports = {
         nav: [
 			{text: '首页', link: '/'},
 			{text: 'Java', items: [
+				{text: 'JVM', link: '/JVM/'},
 				{text: 'javaapi', link: '/javaapi/'},
 				{text: 'mybatis', link: '/mybatis/'},
 				{text: '多线程', link: '/juc/'}
