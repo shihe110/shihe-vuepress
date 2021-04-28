@@ -6,17 +6,17 @@
 通过注解指定：
 ```js
 @ControllerAdvice(annotations = RestController.class) 
-public class someControllerAdvice{}
+public class SomeControllerAdvice{}
 ```
 通过包名指定：
 ```js
 @ControllerAdvice("org.shihe.controller")
-public class someControllerAdvice{}
+public class SomeControllerAdvice{}
 ```
 通过控制器指定：
 ```js
 @ControllerAdvice(assignableTypes = {PeopleController.class, DemoController.class})
-public class someControllerAdvice{}
+public class SomeControllerAdvice{}
 ```
 
 ## 异常处理
@@ -62,7 +62,7 @@ public void exceptions(String name)  {
 public class PersonEditor extends PropertyEditorSupport {
     @Override
     public void setAsText(String text) throws IllegalArgumentException {
-        String[] personStr = text.split("-"); // 将1-wyf-35分割成字符串数组
+        String[] personStr = text.split("-"); // 将1-shihe-35分割成字符串数组
         Long id = Long.valueOf(personStr[0]);
         String name = personStr[1];
         Integer age = Integer.valueOf(personStr[2]);
